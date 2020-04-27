@@ -1,8 +1,9 @@
+// Declaring the variables for the user input and total
 let totalSum = 0;
 let userInput = 0;
 
 // Create a loop to create the 0-9 key
-const numberButtonArray = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '+', '/', '*', '='];
+const numberButtonArray = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '+', '/', '*', '=' ];
 for (let i = 0; i != numberButtonArray.length; i++) {
 	document.querySelector(`#calculator`).innerHTML += `
     <button id="calc-num-${numberButtonArray[i]}">${numberButtonArray[i]}</button>`;
@@ -12,6 +13,8 @@ for (let i = 0; i != numberButtonArray.length; i++) {
 function minusKey() {
 	document.querySelector(`#calculator`).innerHTML += `<button id="minus-key">-</button>`;
 }
+
+// Calling minusKey function
 minusKey();
 
 // Creating one function for key inputs
