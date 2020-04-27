@@ -1,0 +1,12 @@
+body{
+    background-color: darkgrey;
+}
+#calc-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    text-align: center;
+    height: 5vh;
+    width: 50vw;
+}
